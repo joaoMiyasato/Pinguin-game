@@ -9,6 +9,8 @@ public class ThirdPersonCam : MonoBehaviour
     public Transform player;
     public Transform playerObj;
     public Rigidbody rb;
+    public PlayerMovement pm;
+    public WallJump wj;
 
     public float rotationSpeed;
 
@@ -28,7 +30,7 @@ public class ThirdPersonCam : MonoBehaviour
 
         Vector3 inputDir = orientation.forward * verticalInput + orientation.right * horizontaInput;
 
-        if(inputDir != Vector3.zero)
+        if(inputDir != Vector3.zero && !pm.sliding && !wj.bumping && !wj.wallJumping && !wj.afterBump)
         {
             playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
         }
