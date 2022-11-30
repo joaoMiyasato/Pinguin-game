@@ -372,7 +372,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51849936}
-  m_LocalRotation: {x: 0.11510176, y: -0.000000004273005, z: 4.951212e-10, w: 0.9933537}
+  m_LocalRotation: {x: 0.11510176, y: 0.000000004273006, z: -4.9512133e-10, w: 0.9933537}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1022,7 +1022,6 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8192
-  inimigo: 0
   playerInRange: 0
   attackRange: 0
   point1: {x: 0, y: 0, z: 0}
