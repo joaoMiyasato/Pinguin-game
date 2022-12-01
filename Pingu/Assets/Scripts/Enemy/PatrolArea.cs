@@ -13,7 +13,11 @@ public class PatrolArea : MonoBehaviour
         {
             onPatrolArea = true;
         }
-        else
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "Player")
         {
             onPatrolArea = false;
         }

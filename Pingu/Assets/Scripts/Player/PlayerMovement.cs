@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ground Check")]
     public float playerHeight;
+    public float adjust;
     public LayerMask whatIsGround;
     public bool grounded;
 
@@ -56,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround); 
+        grounded = Physics.Raycast(new Vector3(transform.position.x, transform.position.y - adjust, transform.position.z), Vector3.down, playerHeight * 0.5f + 0.5f, whatIsGround); 
 
         MyInput();
         SpeedControl();
@@ -196,9 +197,9 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
-    // private void OnDrawGizmos()
-    // {
-    //     Gizmos.color = Color.red;
-    //     Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y - (playerHeight * 0.5f + 0.2f), transform.position.z));
-    // }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + adjust - playerHeight * 0.5f + 0.5f, transform.position.z));
+    }
 }

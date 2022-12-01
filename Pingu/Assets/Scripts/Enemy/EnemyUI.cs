@@ -30,14 +30,14 @@ public class EnemyUI : MonoBehaviour
         
         //AleatoryWalk();
         
-        Debug.Log(point1);
+        //Debug.Log(point1);
         //inimigo = Inimigo.parado;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(patrolArea.GetComponent<PatrolArea>().onPatrolArea);
+        //Debug.Log(patrolArea.GetComponent<PatrolArea>().onPatrolArea);
 
 
         //if(!playerInRange && inimigo == Inimigo.atacando) inimigo = Inimigo.voltando; AleatoryWalk();

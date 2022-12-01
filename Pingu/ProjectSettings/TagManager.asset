@@ -13,13 +13,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - Ground
-  - Wall
+  - Character
+  - Interactable
+  - Post Processing
   - 
   - Player
-  - 
+  - Wall
+  - Ground
   - 
   - 
   - 

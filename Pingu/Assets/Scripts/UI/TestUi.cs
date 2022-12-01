@@ -15,6 +15,6 @@ public class TestUi : MonoBehaviour
 
     void Update()
     {
-        tmp.text = new Vector3(playerRb.velocity.x, 0, playerRb.velocity.z).magnitude.ToString();
+        //tmp.text = new Vector3(playerRb.velocity.x, 0, playerRb.velocity.z).magnitude.ToString();
     }
 }
