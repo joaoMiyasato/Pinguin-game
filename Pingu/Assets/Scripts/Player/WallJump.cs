@@ -9,6 +9,7 @@ public class WallJump : MonoBehaviour
     public Rigidbody rb;
     public LayerMask whatIsWall;
     public PlayerMovement pm;
+    public Animator anim;
 
     [Header("WallBump")]
     public float maxBumpTime;
@@ -25,6 +26,7 @@ public class WallJump : MonoBehaviour
 
     public KeyCode jumpKey = KeyCode.Space;
     public bool wallJumping = false;
+    public bool startingWallJump = false;
 
     [Header("Detection")]
     public float detectionLenght;
@@ -33,14 +35,14 @@ public class WallJump : MonoBehaviour
     private float wallLookAngle;
 
 
-    private RaycastHit frontWallHit;
+    public RaycastHit frontWallHit;
     private bool wallFront;
 
     private Transform lastWall;
-    private Vector3 lastWallNormal;
+    public Vector3 lastWallNormal;
     public float minWallNormalAngleChange;
 
-    float timer = 0.2f;
+    float timer = 0.25f;
 
     private void Update()
     {
@@ -61,7 +63,7 @@ public class WallJump : MonoBehaviour
         }
         else
         {
-            timer = 0.2f;
+            timer = 0.25f;
         }
 
         if(afterBump)
@@ -87,7 +89,7 @@ public class WallJump : MonoBehaviour
             {
                 bumpTimer -= Time.deltaTime;
             }
-            if(bumpTimer < 0)
+            if(bumpTimer < 0 && !wallJumping)
             {
                 StopWallBump();
                 afterBump = true;
@@ -95,14 +97,14 @@ public class WallJump : MonoBehaviour
         }
         else
         {
-            StopWallBump();
+            if(!wallJumping)
+                StopWallBump();
         }
 
         if(bumping && Input.GetKeyDown(jumpKey) && wallJumpCounter > 0)
         {
-            rb.useGravity = true;
             bumping = false;
-            WallJumping();
+            StartWallJump();
         }
     }
 
@@ -110,6 +112,15 @@ public class WallJump : MonoBehaviour
     {
         wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLenght, whatIsWall);
         wallLookAngle = Vector3.Angle(orientation.forward, -frontWallHit.normal);
+
+        if(Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, 4f, whatIsWall))
+        {
+            pm.cantSlide = true;
+        }
+        else
+        {
+            pm.cantSlide = false;
+        }
 
         bool newWall = /*frontWallHit.transform != lastWall || */Mathf.Abs(Vector3.Angle(lastWallNormal, frontWallHit.normal)) > minWallNormalAngleChange;
 
@@ -120,9 +131,21 @@ public class WallJump : MonoBehaviour
         }
     }
 
+    private void StartWallJump()
+    {
+        anim.SetBool("WallJumping", true);
+        rb.velocity = Vector3.zero;
+        startingWallJump = true;
+        pm.jumping = true;
+        anim.SetTrigger("WallJump");
+        Invoke(nameof(WallJumping), 0.5f);
+    }
+
     private void WallJumping()
     {
-        wallJumping = false;
+        anim.SetBool("WallJumping", false);
+        rb.useGravity = true;
+        startingWallJump = false;
         wallJumping = true;
         wallJumpCounter--;
         Vector3 forceToApply = transform.up * wallJumpUpForce + frontWallHit.normal * wallJumpBackForce;
@@ -130,7 +153,7 @@ public class WallJump : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.AddForce(forceToApply, ForceMode.Impulse);
 
-        orientation.forward = Vector3.Slerp(orientation.forward, frontWallHit.normal, Time.deltaTime * 300f);
+        //orientation.forward = Vector3.Slerp(orientation.forward, frontWallHit.normal, Time.deltaTime * 300f);
     }
 
     private void EndWallJumping()
@@ -141,6 +164,7 @@ public class WallJump : MonoBehaviour
     private void StartWallBump()
     {
         bumping = true;
+        anim.SetTrigger("Bumping");
 
         lastWall = frontWallHit.transform;
         lastWallNormal = frontWallHit.normal;

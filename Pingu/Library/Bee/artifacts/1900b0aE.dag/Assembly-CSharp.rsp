@@ -366,6 +366,7 @@
 "Assets/Scripts/Camera/ThirdPersonCam.cs"
 "Assets/Scripts/Enemy/EnemyUI.cs"
 "Assets/Scripts/Enemy/PatrolArea.cs"
+"Assets/Scripts/Player/AnimationEvents.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 "Assets/Scripts/Player/WallJump.cs"
 "Assets/Scripts/UI/TestUi.cs"
