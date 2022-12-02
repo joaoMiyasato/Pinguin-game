@@ -1,0 +1,277 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.23f1 (9636b062134a) revision 9844400'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16315 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker28
+-projectPath
+D:/Projetos Unity/Pinguin-game/Pingu
+-logFile
+Logs/AssetImportWorker28.log
+-srvPort
+60236
+Successfully changed project path to: D:/Projetos Unity/Pinguin-game/Pingu
+D:/Projetos Unity/Pinguin-game/Pingu
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 106.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.23f1 (9636b062134a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projetos Unity/Pinguin-game/Pingu/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8170 MB
+    Driver:   30.0.15021.11005
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011703 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 101.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (850ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (590ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+				TypeCache.Initialize (144ms)
+					TypeCache.ScanAssembly (142ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007710 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Projetos Unity\Pinguin-game\Pingu\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Projetos Unity\Pinguin-game\Pingu\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.547 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1548ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1166ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (427ms)
+				TypeCache.Initialize (421ms)
+					TypeCache.ScanAssembly (416ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (487ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.4 MB). Loaded Objects now: 4132.
+Memory consumption went from 0.56 GB to 0.56 GB.
+Total: 4.087500 ms (FindLiveObjects: 0.389400 ms CreateObjectMapping: 0.100500 ms MarkObjects: 3.183300 ms  DeleteObjects: 0.412700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 66170.173401 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia1_D.TGA.png
+  artifactKey: Guid(0ad0fbed80598b8498d451be44875b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia1_D.TGA.png using Guid(0ad0fbed80598b8498d451be44875b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd2594dd626405603dcea8b216faa2c') in 0.092988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia3_N.TGA.png
+  artifactKey: Guid(899a8944fb03b774a83106ebd30ffc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia3_N.TGA.png using Guid(899a8944fb03b774a83106ebd30ffc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2999d8df3ced2a46c451ba6129fe5e') in 0.017417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia2_D.TGA.png
+  artifactKey: Guid(2959c15f484582244887401abd2124da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia2_D.TGA.png using Guid(2959c15f484582244887401abd2124da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f67cdc26f7ebb38d054b894b9111244') in 0.015524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_WallPanel_D.TGA.png
+  artifactKey: Guid(4973350c4a3c1f14ca4760c34c89b558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_WallPanel_D.TGA.png using Guid(4973350c4a3c1f14ca4760c34c89b558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8d5992379c56f0f3f898bb69575da6') in 0.016839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia1_N.TGA.png
+  artifactKey: Guid(08bf8002dbfd6ea4d9142fb8df78e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_Tuberia1_N.TGA.png using Guid(08bf8002dbfd6ea4d9142fb8df78e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c223a29cc8e1bcce8ab8448f3f68b17') in 0.015789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.165039 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Prop_WallPanel_ORM.TGA.png
+  artifactKey: Guid(001e46c812d538147a2158bea7654987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Prop_WallPanel_ORM.TGA.png using Guid(001e46c812d538147a2158bea7654987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5770f543f8ec277551a3b686999c326c') in 0.016166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/PropPared_D.TGA.png
+  artifactKey: Guid(37747ad3f92e3d5419a9a94116f74f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/PropPared_D.TGA.png using Guid(37747ad3f92e3d5419a9a94116f74f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ef893854e32fd425b84242ba1efd9a') in 0.016376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/PropPared_N.TGA.png
+  artifactKey: Guid(24d28b808b5431c49868fbd0726ab312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/PropPared_N.TGA.png using Guid(24d28b808b5431c49868fbd0726ab312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a45e1df3bb8c34de337a9c8a996e53a') in 0.015414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/skecht_MATIN_Caja_11_BaseColor.png
+  artifactKey: Guid(e9af36e99a3b4044c938d74b85a7f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/skecht_MATIN_Caja_11_BaseColor.png using Guid(e9af36e99a3b4044c938d74b85a7f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92847d3e1026ec92edd495dc5670159') in 0.025779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_ORM.TGA.png
+  artifactKey: Guid(3728ebeba9a7bca4b9df99832b34752e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_ORM.TGA.png using Guid(3728ebeba9a7bca4b9df99832b34752e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546388617cca0d38dbd82f45015c0598') in 0.248610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/tubos_cortos.mat
+  artifactKey: Guid(3a69e03fbab442e4fabc225bbb6ace73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/tubos_cortos.mat using Guid(3a69e03fbab442e4fabc225bbb6ace73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2980b47410ec5da2f83fa801863dad64') in 0.087012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Tablet_Low_DefaultMaterial_Emissive.TGA.png
+  artifactKey: Guid(fa36fb7f903370f42a61a711123b3739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Tablet_Low_DefaultMaterial_Emissive.TGA.png using Guid(fa36fb7f903370f42a61a711123b3739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a21631b2acdd24291d1463d8893796ab') in 0.015023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Tablet_Low_DefaultMaterial_BaseColor.TGA.png
+  artifactKey: Guid(9b5093baf0613df47a546e53ea01464d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Tablet_Low_DefaultMaterial_BaseColor.TGA.png using Guid(9b5093baf0613df47a546e53ea01464d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b3a0d822e464a26b6f50d0f944ff068') in 0.038601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Wires.mat
+  artifactKey: Guid(2ab4d0e6bb4a91246a16469df085e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Wires.mat using Guid(2ab4d0e6bb4a91246a16469df085e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e734aa7f3cd4f165361a48f8b0226760') in 0.018777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_N.TGA.png
+  artifactKey: Guid(2df292cf25966d64e8f582ec889744aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_N.TGA.png using Guid(2df292cf25966d64e8f582ec889744aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541d0fec802ec1f814460954604333ea') in 0.017179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Wire_N.TGA.png
+  artifactKey: Guid(11dcf80a6b49de34996dbb8c2b51b1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Wire_N.TGA.png using Guid(11dcf80a6b49de34996dbb8c2b51b1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534e9df489b0cf242fc95ff8cc07dfdf') in 0.015286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/Wire_MASK.TGA.png
+  artifactKey: Guid(0bbba8442e5e77147a76285f9cda80f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/Wire_MASK.TGA.png using Guid(0bbba8442e5e77147a76285f9cda80f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f18ece0c5fa26975e37e9fc037244b0') in 0.015515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_E.TGA.png
+  artifactKey: Guid(d5947e5fbda6b994a827d57d944c2e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ScifiProps/textures/PropCaja_E.TGA.png using Guid(d5947e5fbda6b994a827d57d944c2e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0db60fa8b4c656839c8fcbb9f45e6c') in 0.039437 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

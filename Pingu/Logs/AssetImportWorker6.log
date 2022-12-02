@@ -1,0 +1,289 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.23f1 (9636b062134a) revision 9844400'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16315 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/Projetos Unity/Pinguin-game/Pingu
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+60236
+Successfully changed project path to: D:/Projetos Unity/Pinguin-game/Pingu
+D:/Projetos Unity/Pinguin-game/Pingu
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 126.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.23f1 (9636b062134a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projetos Unity/Pinguin-game/Pingu/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8170 MB
+    Driver:   30.0.15021.11005
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011383 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 93.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Domain Reload Profiling:
+	ReloadAssembly (790ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (546ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (130ms)
+				TypeCache.Initialize (130ms)
+					TypeCache.ScanAssembly (128ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (315ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007397 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Projetos Unity\Pinguin-game\Pingu\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Projetos Unity\Pinguin-game\Pingu\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.298 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1299ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (999ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (326ms)
+				TypeCache.Initialize (320ms)
+					TypeCache.ScanAssembly (315ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (446ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.4 MB). Loaded Objects now: 4131.
+Memory consumption went from 0.56 GB to 0.56 GB.
+Total: 3.936500 ms (FindLiveObjects: 0.324600 ms CreateObjectMapping: 0.095500 ms MarkObjects: 3.143500 ms  DeleteObjects: 0.371800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61162.668765 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/CargoCube_med.mat
+  artifactKey: Guid(2ad9bff6ea83ac04ba9052a43570bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/CargoCube_med.mat using Guid(2ad9bff6ea83ac04ba9052a43570bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72ff3613ff84bb87a82b260f791a676') in 0.158556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/MedBox_cyb.mat
+  artifactKey: Guid(e785a04a0b617f04fb3db95215a015a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/MedBox_cyb.mat using Guid(e785a04a0b617f04fb3db95215a015a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd085b409ea4c5ef695c8581816b4259c') in 0.020107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/Case_main_cyb.mat
+  artifactKey: Guid(f422b5130e2a3ee418ec2d21f5809e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/Case_main_cyb.mat using Guid(f422b5130e2a3ee418ec2d21f5809e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd34b28c7140f95e02d361dbe3ae5fc') in 0.017135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.371514 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/Case_main_AO.jpg
+  artifactKey: Guid(65b7c8bf32c346b4f91a0cee5743a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/Case_main_AO.jpg using Guid(65b7c8bf32c346b4f91a0cee5743a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add49d123d7d2f470d608248e4ba25ae') in 0.100419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/SmallBox_AO.jpg
+  artifactKey: Guid(10c3ebd7295166544acf791447cd38f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/SmallBox_AO.jpg using Guid(10c3ebd7295166544acf791447cd38f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155efb8b1aece303d8f3303a91381960') in 0.019298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/SmallBox_albedo.jpg
+  artifactKey: Guid(dcd644c01f776d54781e925dbb4aa816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/SmallBox_albedo.jpg using Guid(dcd644c01f776d54781e925dbb4aa816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '818b3f7b96222d96cb3bd59ea9a51360') in 0.017879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/ToolBox_normal.png
+  artifactKey: Guid(1295054eb88e6b7429a6e37a3ba1ca68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/ToolBox_normal.png using Guid(1295054eb88e6b7429a6e37a3ba1ca68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74c2eb746b8b66a19cdc7969a65069e') in 0.029520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/MedBox_roughness.jpg
+  artifactKey: Guid(4bc7ec8fc442b1545b8562a40149f43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/MedBox_roughness.jpg using Guid(4bc7ec8fc442b1545b8562a40149f43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15204aaf905b8b7ed60ce8a3cfc06bb9') in 0.020281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/MedBox_albedo.jpg
+  artifactKey: Guid(194923b35f94ef34e9e9cc52ec010431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/MedBox_albedo.jpg using Guid(194923b35f94ef34e9e9cc52ec010431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7c1fbc575cb847ca724ce6af7a6b15') in 0.029469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/ToolBox_metallic.jpg
+  artifactKey: Guid(5829ede30ca32b74dae404f94afb5d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/ToolBox_metallic.jpg using Guid(5829ede30ca32b74dae404f94afb5d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba15e62115e0affaadd63d633902411') in 0.022054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/DefaultMaterial_emissive.jpg
+  artifactKey: Guid(2195a32de743d6246b05fd76504b2f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/DefaultMaterial_emissive.jpg using Guid(2195a32de743d6246b05fd76504b2f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f082eecebea1bc7452a8f1478ed7970a') in 0.018812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/SmallBox_roughness.jpg
+  artifactKey: Guid(96f3cfb89c7658f449d0c11868d446bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/SmallBox_roughness.jpg using Guid(96f3cfb89c7658f449d0c11868d446bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4679cf5051d48f16446a23a3021d1e88') in 0.017670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.678785 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/CargoCube_med.mat
+  artifactKey: Guid(2ad9bff6ea83ac04ba9052a43570bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/CargoCube_med.mat using Guid(2ad9bff6ea83ac04ba9052a43570bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2233af0a71e056625c85f248743591') in 0.027229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/MedBox_mil.mat
+  artifactKey: Guid(ae3016e3e124a4244a7c8c252bf6c913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/MedBox_mil.mat using Guid(ae3016e3e124a4244a7c8c252bf6c913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6f4ea6228466e449adb30324157092') in 0.021853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/Case_glass_med.mat
+  artifactKey: Guid(72b9cbf33f160124c95a91affe5251cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/Case_glass_med.mat using Guid(72b9cbf33f160124c95a91affe5251cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61ceebdf7a43a3093d957a141745190') in 0.266595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.130502 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/ToolBox_med.mat
+  artifactKey: Guid(e73982f7fa0c8154c9ba0fc6728b9a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/ToolBox_med.mat using Guid(e73982f7fa0c8154c9ba0fc6728b9a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379fe6c7e89ab383f8f40ce2cc5aaa54') in 0.019625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Scene Objects/ToolBox/textures/ToolBox_mil.mat
+  artifactKey: Guid(2c51958ce7c48854e8e18da725f37954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/ToolBox/textures/ToolBox_mil.mat using Guid(2c51958ce7c48854e8e18da725f37954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd94d6d6b0e6f582ef59fa73826314fb') in 0.043219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 275.305060 seconds.
+  path: Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Emission.png
+  artifactKey: Guid(dd2d372dafac5694682e87548a34d881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Emission.png using Guid(dd2d372dafac5694682e87548a34d881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1880bdad411c370c6112bc606852b2ee') in 0.021371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Metalness_png-Barrel_Roughness_Baked@channels=B.png
+  artifactKey: Guid(149573190003c8a49bd28e9737cfa79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Metalness_png-Barrel_Roughness_Baked@channels=B.png using Guid(149573190003c8a49bd28e9737cfa79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b266b9d091dccf2e0c8a9e7ca7d47530') in 0.046710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Metalness_png-Barrel_Roughness_Baked@channels=G.png
+  artifactKey: Guid(78efcd3d43f75cc458a387bbe7a4b644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scene Objects/Area51Barrel/textures/Barrel_Metalness_png-Barrel_Roughness_Baked@channels=G.png using Guid(78efcd3d43f75cc458a387bbe7a4b644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0fbdd03e88b457853e147b6ce4cf47') in 0.018290 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
