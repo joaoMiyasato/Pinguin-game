@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":0.9511575698852539,"y":0.3783695697784424,"z":-8.368449211120606},"rotation":{"x":0.18482694029808045,"y":-0.5094395279884338,"z":0.11306341737508774,"w":0.8327843546867371},"size":7.960765838623047,"orthographic":false}
-=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-1.148634910583496,"y":4.6774091720581059,"z":5.087820053100586},"rotation":{"x":0.313097208738327,"y":-0.11726868152618408,"z":0.03899189457297325,"w":0.9416466355323792},"size":6.808765411376953,"orthographic":false}
->>>>>>> parent of 5dd5345c (audios)
