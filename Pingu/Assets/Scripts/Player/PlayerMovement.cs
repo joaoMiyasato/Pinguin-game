@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
-    Animator anim;
+    public Animator anim;
     WallJump wj;
+    public Collider normal1, normal2, slide1;
 
     [Header("Movement")]
     public float acceleration;
@@ -22,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     bool readyToJump = true;
     bool sprinting = false;
     public bool sliding = false;
+    public bool jumping = false;
+    public bool cantSlide = false;
 
     [Header("Colliders")]
     public Collider foot;
@@ -51,13 +54,22 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        anim = GetComponent<Animator>();
         wj = GetComponent<WallJump>();
     }
 
     void Update()
     {
-        grounded = Physics.Raycast(new Vector3(transform.position.x, transform.position.y - adjust, transform.position.z), Vector3.down, playerHeight * 0.5f + 0.5f, whatIsGround); 
+        if(rb.velocity.y < -0.1f)
+        {
+            anim.SetBool("caindo", true);
+        }
+        else
+        {
+            anim.SetBool("caindo", false);
+        }
+
+        grounded = Physics.Raycast(new Vector3(transform.position.x, transform.position.y - adjust, transform.position.z), Vector3.down, playerHeight * 0.5f + 0.1f, whatIsGround); 
+        if(grounded){anim.SetBool("Grounded", true);}else{anim.SetBool("Grounded", false);}
 
         MyInput();
         SpeedControl();
@@ -66,12 +78,18 @@ public class PlayerMovement : MonoBehaviour
         {
             if(!sliding)
             {
+                normal1.enabled = true;
+                normal2.enabled = true;
+                slide1.enabled = false;
                 rb.drag = groundDrag;
                 foot.material = normalMaterial;
             }
             else
             {
-                rb.drag = 0;
+                normal1.enabled = false;
+                normal2.enabled = false;
+                slide1.enabled = true;
+                rb.drag = 0.45f;
                 foot.material = slipperyMaterial;
             }
         }
@@ -110,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
+            anim.SetTrigger("Jump");
             
             Jump();
 
@@ -119,15 +138,17 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(sprintKey))
         {
             sprinting = true;
+            anim.SetBool("Run", true);
         }
         else
         {
             sprinting = false;
+            anim.SetBool("Run", false);
         }
 
         if(Input.GetKey(slideKey) && grounded)
         {
-            if(new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude > 2f)
+            if(new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude > 2f && !cantSlide)
             {
                 sliding = true;
                 anim.SetBool("Slide", true);
@@ -136,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             sliding = false;
-                anim.SetBool("Slide", false);
+            anim.SetBool("Slide", false);
         }
     }
 
@@ -144,11 +165,11 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDir = orientation.forward * verticalInput + orientation.right * horizontaInput;
 
-        if(grounded)
+        if(grounded && !wj.startingWallJump && !wj.afterBump)
         {
             rb.AddForce(moveDir.normalized * acceleration * 10f, ForceMode.Force);
         }
-        else
+        else if(!grounded && !wj.startingWallJump && !wj.afterBump)
         {
             rb.AddForce(moveDir.normalized * acceleration * 10f * airMultiplier, ForceMode.Force);
         }
@@ -187,6 +208,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         // Debug.Log("Jumping");
+        jumping = true;
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
@@ -194,12 +216,13 @@ public class PlayerMovement : MonoBehaviour
 
     void ResetJump()
     {
+        jumping = false;
         readyToJump = true;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + adjust - playerHeight * 0.5f + 0.5f, transform.position.z));
+        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + adjust - playerHeight * 0.5f + 0.1f, transform.position.z));
     }
 }

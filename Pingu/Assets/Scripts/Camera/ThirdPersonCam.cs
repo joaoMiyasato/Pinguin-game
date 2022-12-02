@@ -14,6 +14,8 @@ public class ThirdPersonCam : MonoBehaviour
 
     public float rotationSpeed;
 
+    private Vector3 inputDir;
+
     void Start()
     {
         // Cursor.lockState = CursorLockMode.Locked;
@@ -28,9 +30,9 @@ public class ThirdPersonCam : MonoBehaviour
         float horizontaInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 inputDir = orientation.forward * verticalInput + orientation.right * horizontaInput;
+        inputDir = orientation.forward * verticalInput + orientation.right * horizontaInput;
 
-        if(inputDir != Vector3.zero && !pm.sliding && !wj.bumping && !wj.wallJumping && !wj.afterBump)
+        if(inputDir != Vector3.zero && !pm.sliding && !wj.bumping && !wj.wallJumping && !wj.afterBump && !wj.startingWallJump)
         {
             playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
         }
